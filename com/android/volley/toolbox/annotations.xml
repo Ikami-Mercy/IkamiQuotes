@@ -1,0 +1,5 @@
+<root>
+    <item name='com.android.volley.toolbox.HttpResponse'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
