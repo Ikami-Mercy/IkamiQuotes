@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView acme_response;
     private long initialTime;
     private long totalTime = 10000;
-    private FloatingActionButton refreshBtn;
+
     private Handler h = new Handler();
     private Runnable runnable;
     private ProgressDialog pDialog;
@@ -37,9 +37,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         acme_response = findViewById(R.id.acme_response);
-        refreshBtn = findViewById(R.id.refreshBtn);
+        FloatingActionButton  refreshBtn = findViewById(R.id.refreshBtn);
         back = findViewById(R.id.back);
         mRequestQueue = Volley.newRequestQueue(getApplicationContext());
         setProgressDialog();
