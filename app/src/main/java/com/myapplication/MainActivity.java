@@ -152,14 +152,11 @@ public class MainActivity extends AppCompatActivity {
                         try {
                             JSONObject json = response;
                             int statusCode = 200;
-                            if (statusCode == HttpURLConnection.HTTP_OK) {
-
-                            } else {
-
+                            
                                 String errorMsg = json.getString("message");
                                 Toast.makeText(getApplicationContext(),
                                         errorMsg, Toast.LENGTH_LONG).show();
-                            }
+                            
                         } catch (Exception e) {
                             Log.i("TAG", "Error: " + e.getMessage());
                         }
