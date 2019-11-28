@@ -1,7 +1,5 @@
 package com.myapplication;
 
-import android.util.Log;
-
 import org.junit.Test;
 import static org.junit.Assert.*;
 
