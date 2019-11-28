@@ -26,14 +26,13 @@ import org.robolectric.annotation.Config;
 public class HurlStackTest {
 
     @Mock private HttpURLConnection mMockConnection;
-    private HurlStack mHurlStack;
-
+  
     @Before
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
         when(mMockConnection.getOutputStream()).thenReturn(new ByteArrayOutputStream());
 
-        mHurlStack =
+        HurlStack mHurlStack =
                 new HurlStack() {
                     @Override
                     protected HttpURLConnection createConnection(URL url) {
