@@ -166,10 +166,10 @@ public class HttpHeaderParser {
             String[] params = contentType.split(";", 0);
             for (int i = 1; i < params.length; i++) {
                 String[] pair = params[i].trim().split("=", 0);
-                if (pair.length == 2) {
-                    if (pair[0].equals("charset")) {
+                if (pair.length == 2 && pair[0].equals("charset")) {
+                    
                         return pair[1];
-                    }
+                    
                 }
             }
         }
