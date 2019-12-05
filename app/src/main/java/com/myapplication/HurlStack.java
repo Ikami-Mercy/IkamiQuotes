@@ -45,6 +45,8 @@ import javax.net.ssl.SSLSocketFactory;
 public class HurlStack extends BaseHttpStack {
 
     private static final int HTTP_CONTINUE = 100;
+    private final UrlRewriter mUrlRewriter;
+    private final SSLSocketFactory mSslSocketFactory;
 
     /** An interface for transforming URLs before use. */
     public interface UrlRewriter {
@@ -54,9 +56,6 @@ public class HurlStack extends BaseHttpStack {
          */
         String rewriteUrl(String originalUrl);
     }
-
-    private final UrlRewriter mUrlRewriter;
-    private final SSLSocketFactory mSslSocketFactory;
 
     public HurlStack() {
         this(/* urlRewriter = */ null);
