@@ -27,6 +27,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MockRequest extends Request<byte[]> {
+    private Priority mPriority = super.getPriority();
+    
     public MockRequest() {
         super(Request.Method.GET, "http://foo.com", null);
     }
@@ -81,7 +83,7 @@ public class MockRequest extends Request<byte[]> {
         super.cancel();
     }
 
-    private Priority mPriority = super.getPriority();
+
 
     public void setPriority(Priority priority) {
         mPriority = priority;
