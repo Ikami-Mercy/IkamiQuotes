@@ -124,16 +124,10 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-            }
+        
         });
         jsonObjectRequest.setTag(TAG);
-      /* RetryPolicy retryPolicy=new DefaultRetryPolicy(timeout, retries, multiplier);
-        retryPolicy.getCurrentRetryCount();
-        Log.e(TAG, "retries count is:" +  retryPolicy.getCurrentRetryCount());
-        jsonObjectRequest.setRetryPolicy(retryPolicy);*/
+
         mRequestQueue.add(jsonObjectRequest);
     }
 
