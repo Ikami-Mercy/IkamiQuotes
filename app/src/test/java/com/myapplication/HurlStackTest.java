@@ -6,8 +6,6 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-
-import com.android.volley.Header;
 import com.android.volley.Request.Method;
 import com.myapplication.mock.TestRequest;
 import java.io.ByteArrayOutputStream;
