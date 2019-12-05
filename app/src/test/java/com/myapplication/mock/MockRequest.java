@@ -27,6 +27,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MockRequest extends Request<byte[]> {
+      private Map<String, String> mPostParams = new HashMap<String, String>();
     public MockRequest() {
         super(Request.Method.GET, "http://foo.com", null);
     }
@@ -35,7 +36,7 @@ public class MockRequest extends Request<byte[]> {
         super(Request.Method.GET, url, listener);
     }
 
-    private Map<String, String> mPostParams = new HashMap<String, String>();
+ 
 
     public void setPostParams(Map<String, String> postParams) {
         mPostParams = postParams;
