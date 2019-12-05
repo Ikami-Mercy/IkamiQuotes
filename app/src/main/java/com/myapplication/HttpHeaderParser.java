@@ -19,7 +19,7 @@ import java.util.TreeMap;
 
 public class HttpHeaderParser {
 
-    static final String HEADER_CONTENT_TYPE = "Content-Type";
+    private static final String HEADER_CONTENT_TYPE = "Content-Type";
 
     private static final String DEFAULT_CONTENT_CHARSET = "ISO-8859-1";
 
