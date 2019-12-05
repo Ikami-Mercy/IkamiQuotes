@@ -28,7 +28,7 @@ import java.util.Map;
 
 public class MockRequest extends Request<byte[]> {
     private Priority mPriority = super.getPriority();
-    
+    public boolean cancel_called = false;
     public MockRequest() {
         super(Request.Method.GET, "http://foo.com", null);
     }
@@ -75,7 +75,7 @@ public class MockRequest extends Request<byte[]> {
         deliverError_called = true;
     }
 
-    public boolean cancel_called = false;
+  
 
     @Override
     public void cancel() {
