@@ -31,7 +31,7 @@ public class MockRequest extends Request<byte[]> {
     public boolean cancel_called = false;
     public boolean deliverResponse_called = false;
     public boolean parseResponse_called = false;
-    
+    private String mCacheKey = super.getCacheKey();
     public MockRequest() {
         super(Request.Method.GET, "http://foo.com", null);
     }
@@ -51,7 +51,7 @@ public class MockRequest extends Request<byte[]> {
         return mPostParams;
     }
 
-    private String mCacheKey = super.getCacheKey();
+    
 
     public void setCacheKey(String cacheKey) {
         mCacheKey = cacheKey;
