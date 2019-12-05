@@ -1,8 +1,6 @@
 package com.myapplication;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
-
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
