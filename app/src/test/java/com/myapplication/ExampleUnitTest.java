@@ -3,7 +3,7 @@ package com.myapplication;
 import org.junit.Test;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
-import io.restassured.specification.RequestSpecification;
+
 
 /**
  * Example local unit test, which will execute on the development machine (host).
