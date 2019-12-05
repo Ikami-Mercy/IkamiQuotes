@@ -4,8 +4,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 import io.restassured.RestAssured;
-
-import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
