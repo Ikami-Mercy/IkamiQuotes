@@ -184,7 +184,7 @@ public class HttpHeaderParser {
         return headers;
     }
 
-    static List<Header> toAllHeaderList(Map<String, String> headers) {
+    private static List<Header> toAllHeaderList(Map<String, String> headers) {
         List<Header> allHeaders = new ArrayList<>(headers.size());
         for (Map.Entry<String, String> header : headers.entrySet()) {
             allHeaders.add(new Header(header.getKey(), header.getValue()));
