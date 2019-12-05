@@ -44,6 +44,7 @@ public class TestRequest {
         }
 
         @Override
+          /** Method for testing deliverResponse. */
         protected void deliverResponse(byte[] response) {}
     }
 
